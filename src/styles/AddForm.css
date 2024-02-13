@@ -1,0 +1,57 @@
+
+#root{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    /* background-color: rgb(150, 200, 225); */
+    /* color: black; */
+    width: 100vw;
+}
+
+.form{
+    border-right: 1px solid grey;
+}
+
+.cv{
+    
+    color: black;
+    background-color: azure;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "head head head"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "aside main main";
+}
+
+.cv > header{
+    border-bottom: 1px solid black;
+    grid-area: head;
+    /* background-color: green; */
+    padding-left: 1rem;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: auto;
+    padding-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+}
+
+
+
+.cv > aside{
+    padding-left: 1rem;
+    grid-area: aside;
+    /* background-color: aquamarine; */
+    border-right: 1px solid black;
+
+}
+
+.cv > main{
+    padding-left: 1rem;
+    grid-area: main;
+    /* background-color: bisque; */
+}
